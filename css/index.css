@@ -126,3 +126,21 @@ table {
   border-collapse: collapse;
   border-spacing: 0;
 }
+html {
+  font-size: 62.5%;
+}
+.container {
+  width: 100%;
+  background-color: #C38D9D;
+}
+.container header nav {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.container header nav a {
+  color: white;
+  text-decoration: none;
+  padding: 10px 10px;
+  font-size: 1.6rem;
+}
