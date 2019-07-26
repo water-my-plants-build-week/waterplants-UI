@@ -144,3 +144,26 @@ html {
   padding: 10px 10px;
   font-size: 1.6rem;
 }
+.container header .heading {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.container header .heading h1 {
+  font-size: 4.8rem;
+}
+.container header .heading h4 {
+  font-size: 1.8rem;
+}
+.container header .heading .top-btn {
+  display: flex;
+}
+.container header .heading h2 {
+  font-size: 1.8rem;
+}
+.container main {
+  width: 80%;
+  background-color: white;
+  font-size: 1.8rem;
+}
