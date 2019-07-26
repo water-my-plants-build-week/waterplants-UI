@@ -1,0 +1,152 @@
+.container {
+    header {
+        .heading {
+            .flex-center();
+            flex-direction: column;
+
+        h1 {
+            font-size: 4.8rem;
+            margin-top: 100px;
+            color: @middle-blue-green;
+        }
+        h4 {
+            font-size: 1.8rem;
+            margin: 20px 0;
+            color: @middle-blue-green;
+        }
+        .top-btn {
+            display: flex;
+
+            button {
+                .btn();
+            }
+        }
+        }
+    }
+   main {
+        width: 80%;
+        background-color: white;
+        font-size: 1.8rem;
+        margin: 0 auto;
+        border-radius: 6px;
+
+        .intro {
+            .flex-center();
+            flex-direction: column;
+            width: 100%;
+            text-align: center;
+
+            h2 {
+                font-size: 3rem;
+                margin-top: 50px;
+                padding-bottom: 20px;
+                border-bottom: 2px solid @middle-blue-green;
+            }
+
+            p {
+                padding: 20px 0;
+            }
+
+            img {
+                width: 100%;
+                height: auto;
+            }
+        }
+
+        .features {
+            display: flex;
+            flex-flow: column wrap;
+            height: 450px;
+
+            .f1, .f2, .f3, .f4 {
+                width: 50%;
+                height: 200px;
+                text-align: center;
+
+                h3 {
+                    font-size: 2.4rem;
+                    padding: 40px 0;
+                }
+
+                p {
+                    font-size: 1.6rem;
+                }
+            }
+        }
+
+        .links {
+            .flex-center();
+            width: 100%;
+
+            .vision {
+                text-align: center;
+                width: 50%;
+
+                img {
+                    .link-img();
+                }
+
+                h3 {
+                    font-size: 2.4rem;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    font-size: 1.4rem;
+                    margin-bottom: 20px;
+                }
+
+                button {
+                    .btn();
+                }
+            }
+
+            .meet-the-team {
+                text-align: center;
+                width: 50%;
+
+                img {
+                    .link-img();
+                }
+
+                h3 {
+                    font-size: 2.4rem;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    font-size: 1.4rem;
+                    margin-bottom: 20px;
+                }
+
+                button {
+                    .btn();
+                }
+            }
+        }
+    } 
+    .bottom-block {
+        footer {
+            .flex-center();
+            flex-direction: column;
+            
+            h3 {
+                font-size: 2.4rem;
+                margin: 30px 0;
+                color: @verdigris;
+            }
+
+            p {
+                font-size: 2rem;
+                margin-bottom: 20px;
+                color: @verdigris;
+            }
+
+            form {
+                button {
+                    .btn();
+                }
+            }
+        }
+    }
+}
