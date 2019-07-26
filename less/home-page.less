@@ -1,10 +1,8 @@
 .container {
     header {
         .heading {
-            display: flex;
+            .flex-center();
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
 
         h1 {
             font-size: 4.8rem;
@@ -35,10 +33,8 @@
         border-radius: 6px;
 
         .intro {
-            display: flex;
+            .flex-center();
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             width: 100%;
             text-align: center;
 
@@ -81,9 +77,7 @@
         }
 
         .links {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            .flex-center();
             width: 100%;
 
             .vision {
@@ -91,10 +85,21 @@
                 width: 50%;
 
                 img {
-                    width: 95%;
-                    height: auto;
-                    border-radius: 6px;
-                    margin-bottom: 30px;
+                    .link-img();
+                }
+
+                h3 {
+                    font-size: 2.4rem;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    font-size: 1.4rem;
+                    margin-bottom: 20px;
+                }
+
+                button {
+                    .btn();
                 }
             }
 
@@ -103,12 +108,45 @@
                 width: 50%;
 
                 img {
-                    width: 95%;
-                    height: auto;
-                    border-radius: 6px;
-                    margin-bottom: 30px;
+                    .link-img();
+                }
+
+                h3 {
+                    font-size: 2.4rem;
+                    margin-bottom: 15px;
+                }
+
+                p {
+                    font-size: 1.4rem;
+                    margin-bottom: 20px;
+                }
+
+                button {
+                    .btn();
                 }
             }
         }
     } 
+    .bottom-block {
+        footer {
+            .flex-center();
+            flex-direction: column;
+            
+            h3 {
+                font-size: 2.4rem;
+                margin: 30px 0;
+            }
+
+            p {
+                font-size: 2rem;
+                margin-bottom: 20px;
+            }
+
+            form {
+                button {
+                    .btn();
+                }
+            }
+        }
+    }
 }

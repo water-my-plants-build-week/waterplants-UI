@@ -146,9 +146,9 @@ html {
 }
 .container header .heading {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 .container header .heading h1 {
   font-size: 4.8rem;
@@ -177,9 +177,9 @@ html {
 }
 .container main .intro {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
   width: 100%;
   text-align: center;
 }
@@ -238,6 +238,21 @@ html {
   border-radius: 6px;
   margin-bottom: 30px;
 }
+.container main .links .vision h3 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+.container main .links .vision p {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+.container main .links .vision button {
+  padding: 10px 50px;
+  margin: 10px 10px 80px 10px;
+  border-radius: 6px;
+  background-color: white;
+  font-size: 1.2rem;
+}
 .container main .links .meet-the-team {
   text-align: center;
   width: 50%;
@@ -247,4 +262,40 @@ html {
   height: auto;
   border-radius: 6px;
   margin-bottom: 30px;
+}
+.container main .links .meet-the-team h3 {
+  font-size: 2.4rem;
+  margin-bottom: 15px;
+}
+.container main .links .meet-the-team p {
+  font-size: 1.4rem;
+  margin-bottom: 20px;
+}
+.container main .links .meet-the-team button {
+  padding: 10px 50px;
+  margin: 10px 10px 80px 10px;
+  border-radius: 6px;
+  background-color: white;
+  font-size: 1.2rem;
+}
+.container .bottom-block footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.container .bottom-block footer h3 {
+  font-size: 2.4rem;
+  margin: 30px 0;
+}
+.container .bottom-block footer p {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+.container .bottom-block footer form button {
+  padding: 10px 50px;
+  margin: 10px 10px 80px 10px;
+  border-radius: 6px;
+  background-color: white;
+  font-size: 1.2rem;
 }
