@@ -152,18 +152,26 @@ html {
 }
 .container header .heading h1 {
   font-size: 4.8rem;
+  margin-top: 100px;
 }
 .container header .heading h4 {
   font-size: 1.8rem;
+  margin: 20px 0;
 }
 .container header .heading .top-btn {
   display: flex;
 }
-.container header .heading h2 {
-  font-size: 1.8rem;
+.container header .heading .top-btn button {
+  padding: 10px 50px;
+  margin: 10px 10px 80px 10px;
+  border-radius: 6px;
+  background-color: white;
+  font-size: 1.2rem;
 }
 .container main {
   width: 80%;
   background-color: white;
   font-size: 1.8rem;
+  margin: 0 auto;
+  border-radius: 6px;
 }
