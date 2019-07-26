@@ -222,3 +222,29 @@ html {
 .container main .features .f4 p {
   font-size: 1.6rem;
 }
+.container main .links {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.container main .links .vision {
+  text-align: center;
+  width: 50%;
+}
+.container main .links .vision img {
+  width: 95%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
+.container main .links .meet-the-team {
+  text-align: center;
+  width: 50%;
+}
+.container main .links .meet-the-team img {
+  width: 95%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 30px;
+}
