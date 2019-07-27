@@ -185,7 +185,6 @@ html {
 .container header .heading .top-btn button:hover {
   animation-name: grow;
   animation-duration: 3s;
-  animation-iteration-count: initial;
 }
 .container main {
   width: 80%;
@@ -278,7 +277,6 @@ html {
 .container main .links .vision button:hover {
   animation-name: grow;
   animation-duration: 3s;
-  animation-iteration-count: initial;
 }
 .container main .links .meet-the-team {
   text-align: center;
@@ -309,7 +307,6 @@ html {
 .container main .links .meet-the-team button:hover {
   animation-name: grow;
   animation-duration: 3s;
-  animation-iteration-count: initial;
 }
 .container .bottom-block footer {
   display: flex;
@@ -341,5 +338,4 @@ html {
 .container .bottom-block footer form button:hover {
   animation-name: grow;
   animation-duration: 3s;
-  animation-iteration-count: initial;
 }
