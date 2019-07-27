@@ -1,3 +1,8 @@
+@keyframes grow {
+  50% {
+    font-size: 1.9rem;
+  }
+}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -155,13 +160,13 @@ html {
 }
 .container header .heading h1 {
   font-size: 4.8rem;
-  margin-top: 100px;
+  margin-top: 150px;
   color: #85CDCA;
   text-shadow: #4EB4A3 1px 0 10px;
 }
 .container header .heading h4 {
   font-size: 1.8rem;
-  margin: 20px 0;
+  margin: 40px 0;
   color: #85CDCA;
   text-align: center;
   line-height: 20px;
@@ -176,6 +181,11 @@ html {
   background-color: #C38D9D;
   font-size: 1.4rem;
   font-family: 'Hind', sans-serif;
+}
+.container header .heading .top-btn button:hover {
+  animation-name: grow;
+  animation-duration: 3s;
+  animation-iteration-count: initial;
 }
 .container main {
   width: 80%;
@@ -200,6 +210,8 @@ html {
 }
 .container main .intro p {
   padding: 20px 0;
+  margin: 10px 0;
+  font-size: 1.7rem;
 }
 .container main .intro img {
   width: 100%;
@@ -263,6 +275,11 @@ html {
   font-size: 1.4rem;
   font-family: 'Hind', sans-serif;
 }
+.container main .links .vision button:hover {
+  animation-name: grow;
+  animation-duration: 3s;
+  animation-iteration-count: initial;
+}
 .container main .links .meet-the-team {
   text-align: center;
   width: 50%;
@@ -289,6 +306,11 @@ html {
   font-size: 1.4rem;
   font-family: 'Hind', sans-serif;
 }
+.container main .links .meet-the-team button:hover {
+  animation-name: grow;
+  animation-duration: 3s;
+  animation-iteration-count: initial;
+}
 .container .bottom-block footer {
   display: flex;
   justify-content: center;
@@ -297,7 +319,8 @@ html {
 }
 .container .bottom-block footer h3 {
   font-size: 2.4rem;
-  margin: 30px 0;
+  margin-top: 40px;
+  margin-bottom: 30px;
   color: #4EB4A3;
   text-shadow: #85CDCA 1px 0 10px;
 }
@@ -314,4 +337,9 @@ html {
   background-color: #C38D9D;
   font-size: 1.4rem;
   font-family: 'Hind', sans-serif;
+}
+.container .bottom-block footer form button:hover {
+  animation-name: grow;
+  animation-duration: 3s;
+  animation-iteration-count: initial;
 }

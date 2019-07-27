@@ -1,5 +1,7 @@
 .container {
     font-family: 'Hind', sans-serif;
+
+
     header {
         .heading {
             .flex-center();
@@ -7,13 +9,13 @@
 
         h1 {
             font-size: 4.8rem;
-            margin-top: 100px;
+            margin-top: 150px;
             color: @middle-blue-green;
             text-shadow: @verdigris 1px 0 10px;
         }
         h4 {
             font-size: 1.8rem;
-            margin: 20px 0;
+            margin: 40px 0;
             color: @middle-blue-green;
             text-align: center;
             line-height: 20px;
@@ -25,136 +27,138 @@
                 .btn();
                 
             }
-        }
+            }
         }
     }
-   main {
-        width: 80%;
-        background-color: white;
-        font-size: 1.8rem;
-        margin: 0 auto;
-        border-radius: 6px;
+        main {
+            width: 80%;
+            background-color: white;
+            font-size: 1.8rem;
+            margin: 0 auto;
+            border-radius: 6px;
 
-        .intro {
-            .flex-center();
-            flex-direction: column;
-            width: 100%;
-            text-align: center;
-
-            h2 {
-                font-size: 3rem;
-                margin-top: 50px;
-                padding-bottom: 20px;
-                border-bottom: 2px solid @middle-blue-green;
-            }
-
-            p {
-                padding: 20px 0;
-            }
-
-            img {
+            .intro {
+                .flex-center();
+                flex-direction: column;
                 width: 100%;
-                height: auto;
-            }
-        }
-
-        .features {
-            display: flex;
-            flex-flow: column wrap;
-            height: 450px;
-
-            .f1, .f2, .f3, .f4 {
-                width: 50%;
-                height: 200px;
                 text-align: center;
 
-                h3 {
-                    font-size: 2.4rem;
-                    padding: 40px 0;
+                h2 {
+                    font-size: 3rem;
+                    margin-top: 50px;
+                    padding-bottom: 20px;
+                    border-bottom: 2px solid @middle-blue-green;
                 }
 
                 p {
-                    font-size: 1.6rem;
+                    padding: 20px 0;
+                    margin: 10px 0;
+                    font-size: 1.7rem;
                 }
-            }
-        }
-
-        .links {
-            .flex-center();
-            width: 100%;
-
-            .vision {
-                text-align: center;
-                width: 50%;
 
                 img {
-                    .link-img();
+                    width: 100%;
+                    height: auto;
+                }
+            }
+
+            .features {
+                display: flex;
+                flex-flow: column wrap;
+                height: 450px;
+
+                .f1, .f2, .f3, .f4 {
+                    width: 50%;
+                    height: 200px;
+                    text-align: center;
+
+                    h3 {
+                        font-size: 2.4rem;
+                        padding: 40px 0;
+                    }
+
+                    p {
+                        font-size: 1.6rem;
+                    }
+                }
+            }
+
+            .links {
+                .flex-center();
+                width: 100%;
+
+                .vision {
+                    text-align: center;
+                    width: 50%;
+
+                    img {
+                        .link-img();
+                    }
+
+                    h3 {
+                        font-size: 2.4rem;
+                        margin-bottom: 15px;
+                    }
+
+                    p {
+                        font-size: 1.4rem;
+                        margin-bottom: 20px;
+                    }
+
+                    button {
+                        .btn();
+                    }
                 }
 
+                .meet-the-team {
+                    text-align: center;
+                    width: 50%;
+
+                    img {
+                        .link-img();
+                    }
+
+                    h3 {
+                        font-size: 2.4rem;
+                        margin-bottom: 15px;
+                    }
+
+                    p {
+                        font-size: 1.4rem;
+                        margin-bottom: 20px;
+                    }
+
+                    button {
+                        .btn();
+                    }
+                }
+            }
+        } 
+        .bottom-block {
+            footer {
+                .flex-center();
+                flex-direction: column;
+                
                 h3 {
                     font-size: 2.4rem;
-                    margin-bottom: 15px;
+                    margin-top: 40px;
+                    margin-bottom: 30px;
+                    color: @verdigris;
+                    text-shadow: @middle-blue-green 1px 0 10px;
                 }
 
                 p {
-                    font-size: 1.4rem;
+                    font-size: 2rem;
                     margin-bottom: 20px;
+                    color: @verdigris;
+                    text-shadow: @middle-blue-green 1px 0 10px;
                 }
 
-                button {
-                    .btn();
-                }
-            }
-
-            .meet-the-team {
-                text-align: center;
-                width: 50%;
-
-                img {
-                    .link-img();
-                }
-
-                h3 {
-                    font-size: 2.4rem;
-                    margin-bottom: 15px;
-                }
-
-                p {
-                    font-size: 1.4rem;
-                    margin-bottom: 20px;
-                }
-
-                button {
-                    .btn();
-                }
-            }
-        }
-    } 
-    .bottom-block {
-        footer {
-            .flex-center();
-            flex-direction: column;
-            
-            h3 {
-                font-size: 2.4rem;
-                margin-top: 40px;
-                margin-bottom: 30px;
-                color: @verdigris;
-                text-shadow: @middle-blue-green 1px 0 10px;
-            }
-
-            p {
-                font-size: 2rem;
-                margin-bottom: 20px;
-                color: @verdigris;
-                text-shadow: @middle-blue-green 1px 0 10px;
-            }
-
-            form {
-                button {
-                    .btn();
+                form {
+                    button {
+                        .btn();
+                    }
                 }
             }
         }
     }
-}
