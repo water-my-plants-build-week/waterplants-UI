@@ -12,20 +12,26 @@
             margin-top: 150px;
             color: @middle-blue-green;
             text-shadow: @verdigris 1px 0 10px;
+            text-align: center;
         }
         h4 {
-            font-size: 1.8rem;
+            font-size: 2rem;
             margin: 40px 0;
             color: @middle-blue-green;
             text-align: center;
-            line-height: 24px;
+            line-height: 2.4rem;
+
+            @media @mobile {
+                padding: 0 30px;
+            }
         }
         .top-btn {
             display: flex;
+            justify-content: center;
+            align-items: center;
 
             button {
                 .btn();
-                
             }
             }
         }
@@ -35,6 +41,7 @@
             background-color: white;
             font-size: 1.8rem;
             margin: 0 auto;
+            padding: 0 40px;
             border-radius: 6px;
 
             .intro {
@@ -48,18 +55,23 @@
                     margin-top: 70px;
                     padding-bottom: 50px;
                     border-bottom: 2px solid @middle-blue-green;
-                    line-height: 35px;
+                    line-height: 3.5rem;
                 }
 
                 p {
                     padding: 40px 0;
                     margin: 10px 0;
-                    font-size: 1.7rem;
+                    font-size: 1.9rem;
+                    line-height: 2.4rem;
                 }
 
                 img {
                     width: 100%;
                     height: auto;
+
+                    @media @mobile {
+                        width: 100%;
+                    }
                 }
             }
 
@@ -68,42 +80,67 @@
                 flex-flow: column wrap;
                 height: 450px;
 
+                @media @mobile {
+                    flex-flow: column;
+                    height: auto;
+                    align-items: center;
+                    justify-content: center;
+                }
+
                 .f1, .f2, .f3, .f4 {
                     width: 50%;
                     height: 200px;
                     text-align: center;
 
                     h3 {
-                        font-size: 2.4rem;
+                        font-size: 2.6rem;
                         padding: 40px 0;
                     }
 
                     p {
-                        font-size: 1.6rem;
+                        font-size: 1.8rem;
+                        line-height: 2.4rem;
                     }
+                }
+
+                .f4 {
+                    margin-bottom: 30px;
                 }
             }
 
             .links {
-                .flex-center();
+                display: flex;
+                justify-content: center;
+                align-items: flex-end;
                 width: 100%;
+
+                @media @mobile {
+                    flex-direction: column;
+                    align-items: center;
+                }
 
                 .vision {
                     text-align: center;
                     width: 50%;
+
+                    @media @mobile {
+                        width: 100%;
+                    }
 
                     img {
                         .link-img();
                     }
 
                     h3 {
-                        font-size: 2.4rem;
+                        font-size: 2.6rem;
                         margin-bottom: 15px;
                     }
 
                     p {
-                        font-size: 1.4rem;
+                        font-size: 1.8rem;
                         margin-bottom: 20px;
+                        padding: 0 40px;
+                        line-height: 2.4rem;
                     }
 
                     button {
@@ -115,18 +152,24 @@
                     text-align: center;
                     width: 50%;
 
+                    @media @mobile {
+                        width: 100%;
+                    }
+
                     img {
                         .link-img();
                     }
 
                     h3 {
-                        font-size: 2.4rem;
+                        font-size: 2.6rem;
                         margin-bottom: 15px;
                     }
 
                     p {
-                        font-size: 1.4rem;
+                        font-size: 1.8rem;
                         margin-bottom: 20px;
+                        padding: 0 40px;
+                        line-height: 2.4rem;
                     }
 
                     button {
@@ -141,7 +184,7 @@
                 flex-direction: column;
                 
                 h3 {
-                    font-size: 2.4rem;
+                    font-size: 2.6rem;
                     margin-top: 40px;
                     margin-bottom: 30px;
                     color: @verdigris;
@@ -149,7 +192,7 @@
                 }
 
                 p {
-                    font-size: 2rem;
+                    font-size: 1.8rem;
                     margin-bottom: 20px;
                     color: @verdigris;
                     text-shadow: @middle-blue-green 1px 0 10px;
