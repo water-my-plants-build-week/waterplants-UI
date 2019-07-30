@@ -16,7 +16,7 @@
         }
         h4 {
             font-size: 2rem;
-            margin: 40px 0;
+            margin-top: 40px;
             color: @middle-blue-green;
             text-align: center;
             line-height: 2.4rem;
@@ -27,11 +27,20 @@
         }
         .top-btn {
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
+            height: 120px;
+            width: 40%;
+
+            @media @mobile {
+                flex-direction: column;
+                height: 240px;
+                width: 90%;
+            }
 
             button {
                 .btn();
+                margin: 0;
             }
             }
         }
@@ -111,7 +120,7 @@
             .links {
                 display: flex;
                 justify-content: center;
-                align-items: flex-end;
+                align-items: flex-start;
                 width: 100%;
 
                 @media @mobile {
@@ -119,7 +128,7 @@
                     align-items: center;
                 }
 
-                .vision {
+                .info-box {
                     text-align: center;
                     width: 50%;
 
@@ -131,50 +140,29 @@
                         .link-img();
                     }
 
-                    h3 {
-                        font-size: 2.6rem;
-                        margin-bottom: 15px;
-                    }
+                    div {
+                        height: 150px;
 
-                    p {
-                        font-size: 1.8rem;
-                        margin-bottom: 20px;
-                        padding: 0 40px;
-                        line-height: 2.4rem;
+                        h3 {
+                            font-size: 2.6rem;
+                            margin-bottom: 15px;
+                        }
+    
+                        p {
+                            font-size: 1.8rem;
+                            margin-bottom: 20px;
+                            padding: 0 40px;
+                            line-height: 2.4rem;
+                        }
                     }
-
-                    button {
-                        .btn();
+                    .btn-wrapper {
+                        height: 120px;
+                        
+                        button {
+                            .btn();
+                        }
                     }
-                }
-
-                .meet-the-team {
-                    text-align: center;
-                    width: 50%;
-
-                    @media @mobile {
-                        width: 100%;
-                    }
-
-                    img {
-                        .link-img();
-                    }
-
-                    h3 {
-                        font-size: 2.6rem;
-                        margin-bottom: 15px;
-                    }
-
-                    p {
-                        font-size: 1.8rem;
-                        margin-bottom: 20px;
-                        padding: 0 40px;
-                        line-height: 2.4rem;
-                    }
-
-                    button {
-                        .btn();
-                    }
+                    
                 }
             }
         } 
@@ -197,10 +185,11 @@
                     color: @verdigris;
                     text-shadow: @middle-blue-green 1px 0 10px;
                 }
+                button {
+                    .btn();
 
-                form {
-                    button {
-                        .btn();
+                    @media @mobile {
+                        width: 80%;
                     }
                 }
             }
