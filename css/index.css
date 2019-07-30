@@ -190,12 +190,18 @@ html {
 .container header nav a {
   color: white;
   text-decoration: none;
-  padding: 10px 10px;
+  padding: 15px;
   font-size: 1.6rem;
 }
 @media (max-width: 500px) {
   .container header nav a {
     font-size: 2rem;
+    width: 80%;
+    text-align: center;
+  }
+  .container header nav a:hover {
+    color: #4EB4A3;
+    background-color: white;
   }
 }
 .container {
