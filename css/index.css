@@ -143,11 +143,11 @@ html {
 }
 @media (max-width: 500px) {
   .container header .mobile-nav {
-    display: block;
+    display: inline-block;
     width: 100%;
     background-color: white;
     height: 50px;
-    position: fixed;
+    position: relative;
   }
 }
 .container header .mobile-nav .dropbtn {
@@ -176,11 +176,13 @@ html {
 }
 @media (max-width: 500px) {
   .container header nav {
-    justify-content: space-around;
+    justify-content: center;
     display: none;
-    position: absolute;
+    flex-direction: column;
+    position: relative;
     background-color: #4EB4A3;
     min-width: 160px;
+    max-width: 250px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
   }
