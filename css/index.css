@@ -147,6 +147,7 @@ html {
     width: 100%;
     background-color: white;
     height: 50px;
+    position: fixed;
   }
 }
 .container header .mobile-nav .dropbtn {
@@ -164,6 +165,9 @@ html {
     color: white;
     margin: 5px;
   }
+  .container header .mobile-nav .dropbtn:hover {
+    cursor: pointer;
+  }
 }
 .container header nav {
   display: flex;
@@ -175,7 +179,7 @@ html {
     justify-content: space-around;
     display: none;
     position: absolute;
-    background-color: #f1f1f1;
+    background-color: #4EB4A3;
     min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     z-index: 1;
