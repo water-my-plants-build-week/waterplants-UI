@@ -324,7 +324,7 @@ html {
 .container main .features {
   display: flex;
   flex-flow: column wrap;
-  height: 450px;
+  height: 530px;
 }
 @media (max-width: 500px) {
   .container main .features {
@@ -339,7 +339,7 @@ html {
 .container main .features .f3,
 .container main .features .f4 {
   width: 50%;
-  height: 200px;
+  height: 250px;
   text-align: center;
 }
 .container main .features .f1 h3,
@@ -355,6 +355,15 @@ html {
 .container main .features .f4 p {
   font-size: 1.8rem;
   line-height: 2.4rem;
+  margin: 0 20px;
+}
+@media (max-width: 500px) {
+  .container main .features .f1 p,
+  .container main .features .f2 p,
+  .container main .features .f3 p,
+  .container main .features .f4 p {
+    margin: 0;
+  }
 }
 .container main .features .f4 {
   margin-bottom: 30px;
