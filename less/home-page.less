@@ -87,7 +87,11 @@
             .features {
                 display: flex;
                 flex-flow: column wrap;
-                height: 530px;
+                height: 580px;
+                // margin-top: 40px;
+                margin: 40px auto 0 auto;
+                align-items: center;
+                // justify-content: center;
 
                 @media @mobile {
                     flex-flow: column;
@@ -100,23 +104,34 @@
                     width: 50%;
                     height: 250px;
                     text-align: center;
+                    padding: 10px;
 
                     h3 {
                         font-size: 2.6rem;
-                        padding: 40px 0;
+                        padding-top: 40px;
+
+                        @media @mobile {
+                            padding-bottom: 20px;
+                        }
                     }
 
                     p {
                         font-size: 1.8rem;
                         line-height: 2.4rem;
-                        margin: 0 20px;
+                        padding: 50px 20px;
 
                         @media @mobile {
                             margin: 0;
+                            padding: 0;
                         }
                     }
                 }
-
+                .f1, .f2 {
+                    border-right: 2px solid @middle-blue-green;
+                }
+                .f1, .f3 {
+                    border-bottom: 2px solid @middle-blue-green;
+                }
                 .f4 {
                     margin-bottom: 30px;
                 }

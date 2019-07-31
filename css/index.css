@@ -324,7 +324,9 @@ html {
 .container main .features {
   display: flex;
   flex-flow: column wrap;
-  height: 530px;
+  height: 580px;
+  margin: 40px auto 0 auto;
+  align-items: center;
 }
 @media (max-width: 500px) {
   .container main .features {
@@ -341,13 +343,22 @@ html {
   width: 50%;
   height: 250px;
   text-align: center;
+  padding: 10px;
 }
 .container main .features .f1 h3,
 .container main .features .f2 h3,
 .container main .features .f3 h3,
 .container main .features .f4 h3 {
   font-size: 2.6rem;
-  padding: 40px 0;
+  padding-top: 40px;
+}
+@media (max-width: 500px) {
+  .container main .features .f1 h3,
+  .container main .features .f2 h3,
+  .container main .features .f3 h3,
+  .container main .features .f4 h3 {
+    padding-bottom: 20px;
+  }
 }
 .container main .features .f1 p,
 .container main .features .f2 p,
@@ -355,7 +366,7 @@ html {
 .container main .features .f4 p {
   font-size: 1.8rem;
   line-height: 2.4rem;
-  margin: 0 20px;
+  padding: 50px 20px;
 }
 @media (max-width: 500px) {
   .container main .features .f1 p,
@@ -363,7 +374,16 @@ html {
   .container main .features .f3 p,
   .container main .features .f4 p {
     margin: 0;
+    padding: 0;
   }
+}
+.container main .features .f1,
+.container main .features .f2 {
+  border-right: 2px solid #85CDCA;
+}
+.container main .features .f1,
+.container main .features .f3 {
+  border-bottom: 2px solid #85CDCA;
 }
 .container main .features .f4 {
   margin-bottom: 30px;
