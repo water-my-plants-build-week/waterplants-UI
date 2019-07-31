@@ -3,24 +3,27 @@
     <head>
         <meta charset="utf-8">
 
-        <link href="css/index.css" rel="stylesheet">
-        <link href="css/animate.css" rel="stylesheet">
-        <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+        <link href="css/index.css" rel="stylesheet"></link>
+        <link href="css/animate.css" rel="stylesheet"></link>
+        <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet"></link>
     </head>
 
 <div class="container">
     <header>
+        <div class="mobile-nav">
+            <div class="dropbtn">Menu</div>
+        </div>
         <nav>
             <a href="index.html">Home</a>
             <a href="#">Vision</a>
-            <a href="#">Meet the Team</a>
+            <a href="about.html">Meet the Team</a>
         </nav>
         <section class="heading">
             <h1 class="animated slideInDown">Water My Plants</h1>
             <h4>Breaking News! Millennials are killing their plant friends! Maybe let's change that huh?</h4>
             <div class="top-btn">    
-                <button>Sign Up</button>
-                <button>Log In</button>
+                <button onclick="window.location.href = 'https://watermyplants.netlify.com/login'">Sign Up</button>
+                <button onclick="window.location.href = 'https://watermyplants.netlify.com/sign-up'">Log In</button>
             </div>
             
         </section>
@@ -31,40 +34,48 @@
             <section class="intro">
                 <h2>Introducing a fun, new way to keep your plants healthy and happy!</h2>
                 <p>You need this. Poor Rico (the struggling succulent) needs this.</p>
-                <img src="img/greenery-with-bloom.jpg" alt="Generic greenery">
+                <img src="img/greenery-with-bloom.jpg" alt="Green leaves with one bloom">
             </section>
 
             <section class="features">
                 <div class="f1">
-                    <h3>Feature One</h3>
-                    <p>Feature one is pretty rad</p>
+                    <h3>Now it's Personal!</h3>
+                    <p>Create your own account, customized to your preferences!</p>
                 </div>
                 <div class="f2">
-                    <h3>Feature Two</h3>
-                    <p>Feature two is siiiick</p>
+                    <h3>It's All About You!</h3>
+                    <p>Add the plants you know and love to your account. We don't need to know about Karen's orchids right now ok?</p>
                 </div>
                 <div class="f3">
-                    <h3>Feature Three</h3>
-                    <p>Feature three is living their best life</p>
+                    <h3>I'll Water Them When I Want To!</h3>
+                    <p>Customize your watering schedule for your plants, and your schedule. Can only water your plants at 3AM? That's cool!</p>
                 </div>
                 <div class="f4">
-                    <h3>Feature Four</h3>
-                    <p>Feature four is your wildest dream come true <br> (after student loans being paid off)</p>
+                    <h3>Oh Fudge, When Did I Water You?</h3>
+                    <p>Make technology remind you to water your plants, so you don't have to use precious brain space!</p>
                 </div>
             </section>
 
             <section class="links">
-                <div class="vision">
-                    <img src="img/man-observes-nature.jpg" alt="Vision never died in that movie">
-                    <h3>Vision</h3>
-                    <p>Ok so we'll help you keep from dehydrating your office succulent, but what else?</p>
-                    <button>Learn More</button>
+                <div class="info-box">
+                    <img src="img/man-observes-nature.jpg" alt="Man looking into the distance">
+                    <div>
+                        <h3>Vision</h3>
+                        <p>Ok so we'll help you keep from dehydrating your office succulent, but what else?</p>
+                    </div>
+                    <div class="btn-wrapper">
+                        <button>Learn More</button>
+                    </div>
                 </div>
-                <div class="meet-the-team">
-                    <img src="img/team-fist-bump.jpg" alt="A bunch of loons">
-                    <h3>Meet the Team</h3>
-                    <p>A bunch of developers with crazy complicated lives,  but at least our plants are happy!</p>
-                    <button>Learn More</button>
+                <div class="info-box">
+                    <img src="img/team-fist-bump.jpg" alt="Software developers share fistbump">
+                    <div>    
+                        <h3>Meet the Team</h3>
+                        <p>A bunch of developers with crazy complicated lives,  but at least our plants are happy!</p>
+                    </div>
+                    <div class="btn-wrapper">
+                        <button onclick="window.location.href = 'about.html'">Learn More</button>
+                    </div>
                 </div>
             </section>
         </main>
@@ -73,11 +84,10 @@
             <footer>
                 <h3>Just So Tired</h3>
                 <p>You liked it but don't want to scroll back up?</p>
-                <form action="#" method="POST">
-                    <button type="submit">Sign Up</button>
-                </form>
+                <button onclick="window.location.href = 'https://watermyplants.netlify.com/sign-up'">Sign Up</button>
             </footer>
         </section>
+    <script src="js/index.js" type="text/javascript"></script>
     </body>
 </div>
 </html>

@@ -8,9 +8,10 @@
 
 .link-img() {
     width: 95%;
-    height: auto;
+    height: 350px;
     border-radius: 6px;
     margin-bottom: 30px;
+    object-fit: cover;
 }
 
 .btn() {
@@ -29,10 +30,10 @@
     }
 
     @media @mobile {
-        flex-direction: column;
         font-size: 1.8rem;
         padding: 20px 60px;
         border-radius: 10px;
+        width: 100%;
     }
 
     &:hover {

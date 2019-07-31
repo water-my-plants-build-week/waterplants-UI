@@ -11,15 +11,16 @@
             font-size: 5.4rem;
             margin-top: 150px;
             color: @middle-blue-green;
-            text-shadow: @verdigris 1px 0 10px;
+            text-shadow: black 1px 0 10px;
             text-align: center;
         }
         h4 {
             font-size: 2rem;
-            margin: 40px 0;
+            margin-top: 40px;
             color: @middle-blue-green;
             text-align: center;
             line-height: 2.4rem;
+            text-shadow: black 1px 0 5px;
 
             @media @mobile {
                 padding: 0 30px;
@@ -27,11 +28,20 @@
         }
         .top-btn {
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
             align-items: center;
+            height: 120px;
+            width: 40%;
+
+            @media @mobile {
+                flex-direction: column;
+                height: 240px;
+                width: 90%;
+            }
 
             button {
                 .btn();
+                margin: 0;
             }
             }
         }
@@ -78,31 +88,66 @@
             .features {
                 display: flex;
                 flex-flow: column wrap;
-                height: 450px;
+                height: 580px;
+                align-items: center;
+                margin-top: 50px;
+                
+                @media @tablet {
+                    width: 800px;
+                }
 
                 @media @mobile {
                     flex-flow: column;
                     height: auto;
                     align-items: center;
                     justify-content: center;
+                    width: 100%;
                 }
 
                 .f1, .f2, .f3, .f4 {
                     width: 50%;
-                    height: 200px;
+                    height: 250px;
                     text-align: center;
+
+                    @media @mobile {
+                        width: 90%;
+                        height: auto;
+                        margin: 10px;
+                        padding-bottom: 40px;
+                        border-bottom: 2px solid @middle-blue-green;
+                    }
 
                     h3 {
                         font-size: 2.6rem;
-                        padding: 40px 0;
+                        padding-top: 40px;
+
+                        @media @mobile {
+                            padding-bottom: 20px;
+                        }
                     }
 
                     p {
                         font-size: 1.8rem;
                         line-height: 2.4rem;
+                        padding: 50px 20px;
+
+                        @media @mobile {
+                            margin: 0;
+                            padding: 0;
+                        }
                     }
                 }
+                .f1, .f2 {
+                    border-right: 2px solid @middle-blue-green;
 
+                    @media @mobile {
+                        border-right: none;
+                    }
+                }
+                .f1, .f3 {
+                    border-bottom: 2px solid @middle-blue-green;
+
+                }
                 .f4 {
                     margin-bottom: 30px;
                 }
@@ -111,7 +156,7 @@
             .links {
                 display: flex;
                 justify-content: center;
-                align-items: flex-end;
+                align-items: flex-start;
                 width: 100%;
 
                 @media @mobile {
@@ -119,7 +164,7 @@
                     align-items: center;
                 }
 
-                .vision {
+                .info-box {
                     text-align: center;
                     width: 50%;
 
@@ -131,50 +176,29 @@
                         .link-img();
                     }
 
-                    h3 {
-                        font-size: 2.6rem;
-                        margin-bottom: 15px;
-                    }
+                    div {
+                        height: 150px;
 
-                    p {
-                        font-size: 1.8rem;
-                        margin-bottom: 20px;
-                        padding: 0 40px;
-                        line-height: 2.4rem;
+                        h3 {
+                            font-size: 2.6rem;
+                            margin-bottom: 15px;
+                        }
+    
+                        p {
+                            font-size: 1.8rem;
+                            margin-bottom: 20px;
+                            padding: 0 40px;
+                            line-height: 2.4rem;
+                        }
                     }
-
-                    button {
-                        .btn();
+                    .btn-wrapper {
+                        height: 120px;
+                        
+                        button {
+                            .btn();
+                        }
                     }
-                }
-
-                .meet-the-team {
-                    text-align: center;
-                    width: 50%;
-
-                    @media @mobile {
-                        width: 100%;
-                    }
-
-                    img {
-                        .link-img();
-                    }
-
-                    h3 {
-                        font-size: 2.6rem;
-                        margin-bottom: 15px;
-                    }
-
-                    p {
-                        font-size: 1.8rem;
-                        margin-bottom: 20px;
-                        padding: 0 40px;
-                        line-height: 2.4rem;
-                    }
-
-                    button {
-                        .btn();
-                    }
+                    
                 }
             }
         } 
@@ -188,19 +212,20 @@
                     margin-top: 40px;
                     margin-bottom: 30px;
                     color: @verdigris;
-                    text-shadow: @middle-blue-green 1px 0 10px;
+                    text-shadow: black 1px 0 5px;
                 }
 
                 p {
                     font-size: 1.8rem;
                     margin-bottom: 20px;
                     color: @verdigris;
-                    text-shadow: @middle-blue-green 1px 0 10px;
+                    text-shadow: black 1px 0 5px;
                 }
+                button {
+                    .btn();
 
-                form {
-                    button {
-                        .btn();
+                    @media @mobile {
+                        width: 80%;
                     }
                 }
             }

@@ -138,16 +138,71 @@ html {
   width: 100%;
   background: linear-gradient(#E27D5F, #E8A87C);
 }
+.container header .mobile-nav {
+  display: none;
+}
+@media (max-width: 500px) {
+  .container header .mobile-nav {
+    display: inline-block;
+    width: 100%;
+    background-color: white;
+    height: 50px;
+    position: relative;
+  }
+}
+.container header .mobile-nav .dropbtn {
+  display: none;
+}
+@media (max-width: 500px) {
+  .container header .mobile-nav .dropbtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #85CDCA;
+    border-radius: 100%;
+    height: 35px;
+    width: 35px;
+    color: white;
+    margin: 5px;
+  }
+  .container header .mobile-nav .dropbtn:hover {
+    cursor: pointer;
+  }
+}
 .container header nav {
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
+@media (max-width: 500px) {
+  .container header nav {
+    justify-content: center;
+    display: none;
+    flex-direction: column;
+    position: relative;
+    background-color: #4EB4A3;
+    min-width: 160px;
+    max-width: 250px;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+  }
+}
 .container header nav a {
   color: white;
   text-decoration: none;
-  padding: 10px 10px;
+  padding: 15px;
   font-size: 1.6rem;
+}
+@media (max-width: 500px) {
+  .container header nav a {
+    font-size: 2rem;
+    width: 80%;
+    text-align: center;
+  }
+  .container header nav a:hover {
+    color: #4EB4A3;
+    background-color: white;
+  }
 }
 .container {
   font-family: 'Hind', sans-serif;
@@ -162,15 +217,16 @@ html {
   font-size: 5.4rem;
   margin-top: 150px;
   color: #85CDCA;
-  text-shadow: #4EB4A3 1px 0 10px;
+  text-shadow: black 1px 0 10px;
   text-align: center;
 }
 .container header .heading h4 {
   font-size: 2rem;
-  margin: 40px 0;
+  margin-top: 40px;
   color: #85CDCA;
   text-align: center;
   line-height: 2.4rem;
+  text-shadow: black 1px 0 5px;
 }
 @media (max-width: 500px) {
   .container header .heading h4 {
@@ -179,8 +235,17 @@ html {
 }
 .container header .heading .top-btn {
   display: flex;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
+  height: 120px;
+  width: 40%;
+}
+@media (max-width: 500px) {
+  .container header .heading .top-btn {
+    flex-direction: column;
+    height: 240px;
+    width: 90%;
+  }
 }
 .container header .heading .top-btn button {
   padding: 10px 50px;
@@ -190,6 +255,7 @@ html {
   font-size: 1.4rem;
   text-align: center;
   font-family: 'Hind', sans-serif;
+  margin: 0;
 }
 @media (max-width: 800px) {
   .container header .heading .top-btn button {
@@ -200,10 +266,10 @@ html {
 }
 @media (max-width: 500px) {
   .container header .heading .top-btn button {
-    flex-direction: column;
     font-size: 1.8rem;
     padding: 20px 60px;
     border-radius: 10px;
+    width: 100%;
   }
 }
 .container header .heading .top-btn button:hover {
@@ -259,7 +325,14 @@ html {
 .container main .features {
   display: flex;
   flex-flow: column wrap;
-  height: 450px;
+  height: 580px;
+  align-items: center;
+  margin-top: 50px;
+}
+@media (max-width: 800px) {
+  .container main .features {
+    width: 800px;
+  }
 }
 @media (max-width: 500px) {
   .container main .features {
@@ -267,6 +340,7 @@ html {
     height: auto;
     align-items: center;
     justify-content: center;
+    width: 100%;
   }
 }
 .container main .features .f1,
@@ -274,15 +348,35 @@ html {
 .container main .features .f3,
 .container main .features .f4 {
   width: 50%;
-  height: 200px;
+  height: 250px;
   text-align: center;
+}
+@media (max-width: 500px) {
+  .container main .features .f1,
+  .container main .features .f2,
+  .container main .features .f3,
+  .container main .features .f4 {
+    width: 90%;
+    height: auto;
+    margin: 10px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #85CDCA;
+  }
 }
 .container main .features .f1 h3,
 .container main .features .f2 h3,
 .container main .features .f3 h3,
 .container main .features .f4 h3 {
   font-size: 2.6rem;
-  padding: 40px 0;
+  padding-top: 40px;
+}
+@media (max-width: 500px) {
+  .container main .features .f1 h3,
+  .container main .features .f2 h3,
+  .container main .features .f3 h3,
+  .container main .features .f4 h3 {
+    padding-bottom: 20px;
+  }
 }
 .container main .features .f1 p,
 .container main .features .f2 p,
@@ -290,6 +384,30 @@ html {
 .container main .features .f4 p {
   font-size: 1.8rem;
   line-height: 2.4rem;
+  padding: 50px 20px;
+}
+@media (max-width: 500px) {
+  .container main .features .f1 p,
+  .container main .features .f2 p,
+  .container main .features .f3 p,
+  .container main .features .f4 p {
+    margin: 0;
+    padding: 0;
+  }
+}
+.container main .features .f1,
+.container main .features .f2 {
+  border-right: 2px solid #85CDCA;
+}
+@media (max-width: 500px) {
+  .container main .features .f1,
+  .container main .features .f2 {
+    border-right: none;
+  }
+}
+.container main .features .f1,
+.container main .features .f3 {
+  border-bottom: 2px solid #85CDCA;
 }
 .container main .features .f4 {
   margin-bottom: 30px;
@@ -297,7 +415,7 @@ html {
 .container main .links {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
+  align-items: flex-start;
   width: 100%;
 }
 @media (max-width: 500px) {
@@ -306,32 +424,39 @@ html {
     align-items: center;
   }
 }
-.container main .links .vision {
+.container main .links .info-box {
   text-align: center;
   width: 50%;
 }
 @media (max-width: 500px) {
-  .container main .links .vision {
+  .container main .links .info-box {
     width: 100%;
   }
 }
-.container main .links .vision img {
+.container main .links .info-box img {
   width: 95%;
-  height: auto;
+  height: 350px;
   border-radius: 6px;
   margin-bottom: 30px;
+  object-fit: cover;
 }
-.container main .links .vision h3 {
+.container main .links .info-box div {
+  height: 150px;
+}
+.container main .links .info-box div h3 {
   font-size: 2.6rem;
   margin-bottom: 15px;
 }
-.container main .links .vision p {
+.container main .links .info-box div p {
   font-size: 1.8rem;
   margin-bottom: 20px;
   padding: 0 40px;
   line-height: 2.4rem;
 }
-.container main .links .vision button {
+.container main .links .info-box .btn-wrapper {
+  height: 120px;
+}
+.container main .links .info-box .btn-wrapper button {
   padding: 10px 50px;
   margin: 10px 10px 80px 10px;
   border-radius: 6px;
@@ -341,87 +466,26 @@ html {
   font-family: 'Hind', sans-serif;
 }
 @media (max-width: 800px) {
-  .container main .links .vision button {
+  .container main .links .info-box .btn-wrapper button {
     font-size: 1.6rem;
     padding: 15px 55px;
     border-radius: 8px;
   }
 }
 @media (max-width: 500px) {
-  .container main .links .vision button {
-    flex-direction: column;
+  .container main .links .info-box .btn-wrapper button {
     font-size: 1.8rem;
     padding: 20px 60px;
     border-radius: 10px;
-  }
-}
-.container main .links .vision button:hover {
-  animation-name: grow;
-  animation-duration: 3s;
-}
-@media (max-width: 500px) {
-  .container main .links .vision button:hover {
-    animation-name: none;
-    color: #C38D9D;
-    background-color: white;
-    border: 2px solid #C38D9D;
-  }
-}
-.container main .links .meet-the-team {
-  text-align: center;
-  width: 50%;
-}
-@media (max-width: 500px) {
-  .container main .links .meet-the-team {
     width: 100%;
   }
 }
-.container main .links .meet-the-team img {
-  width: 95%;
-  height: auto;
-  border-radius: 6px;
-  margin-bottom: 30px;
-}
-.container main .links .meet-the-team h3 {
-  font-size: 2.6rem;
-  margin-bottom: 15px;
-}
-.container main .links .meet-the-team p {
-  font-size: 1.8rem;
-  margin-bottom: 20px;
-  padding: 0 40px;
-  line-height: 2.4rem;
-}
-.container main .links .meet-the-team button {
-  padding: 10px 50px;
-  margin: 10px 10px 80px 10px;
-  border-radius: 6px;
-  background-color: #C38D9D;
-  font-size: 1.4rem;
-  text-align: center;
-  font-family: 'Hind', sans-serif;
-}
-@media (max-width: 800px) {
-  .container main .links .meet-the-team button {
-    font-size: 1.6rem;
-    padding: 15px 55px;
-    border-radius: 8px;
-  }
-}
-@media (max-width: 500px) {
-  .container main .links .meet-the-team button {
-    flex-direction: column;
-    font-size: 1.8rem;
-    padding: 20px 60px;
-    border-radius: 10px;
-  }
-}
-.container main .links .meet-the-team button:hover {
+.container main .links .info-box .btn-wrapper button:hover {
   animation-name: grow;
   animation-duration: 3s;
 }
 @media (max-width: 500px) {
-  .container main .links .meet-the-team button:hover {
+  .container main .links .info-box .btn-wrapper button:hover {
     animation-name: none;
     color: #C38D9D;
     background-color: white;
@@ -439,15 +503,15 @@ html {
   margin-top: 40px;
   margin-bottom: 30px;
   color: #4EB4A3;
-  text-shadow: #85CDCA 1px 0 10px;
+  text-shadow: black 1px 0 5px;
 }
 .container .bottom-block footer p {
   font-size: 1.8rem;
   margin-bottom: 20px;
   color: #4EB4A3;
-  text-shadow: #85CDCA 1px 0 10px;
+  text-shadow: black 1px 0 5px;
 }
-.container .bottom-block footer form button {
+.container .bottom-block footer button {
   padding: 10px 50px;
   margin: 10px 10px 80px 10px;
   border-radius: 6px;
@@ -457,29 +521,34 @@ html {
   font-family: 'Hind', sans-serif;
 }
 @media (max-width: 800px) {
-  .container .bottom-block footer form button {
+  .container .bottom-block footer button {
     font-size: 1.6rem;
     padding: 15px 55px;
     border-radius: 8px;
   }
 }
 @media (max-width: 500px) {
-  .container .bottom-block footer form button {
-    flex-direction: column;
+  .container .bottom-block footer button {
     font-size: 1.8rem;
     padding: 20px 60px;
     border-radius: 10px;
+    width: 100%;
   }
 }
-.container .bottom-block footer form button:hover {
+.container .bottom-block footer button:hover {
   animation-name: grow;
   animation-duration: 3s;
 }
 @media (max-width: 500px) {
-  .container .bottom-block footer form button:hover {
+  .container .bottom-block footer button:hover {
     animation-name: none;
     color: #C38D9D;
     background-color: white;
     border: 2px solid #C38D9D;
+  }
+}
+@media (max-width: 500px) {
+  .container .bottom-block footer button {
+    width: 80%;
   }
 }
