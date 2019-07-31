@@ -340,10 +340,22 @@ html {
 .container main .features .f2,
 .container main .features .f3,
 .container main .features .f4 {
-  width: 50%;
+  width: 48%;
   height: 250px;
   text-align: center;
   padding: 10px;
+}
+@media (max-width: 500px) {
+  .container main .features .f1,
+  .container main .features .f2,
+  .container main .features .f3,
+  .container main .features .f4 {
+    width: 90%;
+    height: auto;
+    margin: 10px;
+    padding-bottom: 40px;
+    border-bottom: 2px solid #85CDCA;
+  }
 }
 .container main .features .f1 h3,
 .container main .features .f2 h3,
@@ -380,6 +392,12 @@ html {
 .container main .features .f1,
 .container main .features .f2 {
   border-right: 2px solid #85CDCA;
+}
+@media (max-width: 500px) {
+  .container main .features .f1,
+  .container main .features .f2 {
+    border-right: none;
+  }
 }
 .container main .features .f1,
 .container main .features .f3 {
