@@ -503,13 +503,13 @@ html {
   margin-top: 40px;
   margin-bottom: 30px;
   color: #4EB4A3;
-  text-shadow: black 2px 0 5px;
+  text-shadow: black 1px 0 5px;
 }
 .container .bottom-block footer p {
   font-size: 1.8rem;
   margin-bottom: 20px;
   color: #4EB4A3;
-  text-shadow: black 2px 0 5px;
+  text-shadow: black 1px 0 5px;
 }
 .container .bottom-block footer button {
   padding: 10px 50px;
