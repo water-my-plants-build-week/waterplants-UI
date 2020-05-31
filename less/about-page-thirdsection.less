@@ -1,0 +1,129 @@
+.contentbody {
+  margin: 0rem 0rem 0rem 0rem;
+  width: 100%;
+  display: flex;
+  border-radius: 1rem;
+
+  .contentbody_container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    flex: 7;
+    border-radius: 1rem;
+    background-color: white;
+    @media @mobile {
+      flex-flow: column;
+    }
+    .contentbody_child1, .contentbody_child2, .contentbody_child3, .contentbody_child4 {
+      width: 100%;
+      height: 10vh;
+      margin: 1rem 0.5rem 1rem 0.5rem;
+      -moz-box-shadow: 3px 3px 0px #387662;
+      -webkit-box-shadow: 3px 3px 0px #387662;
+      box-shadow: 3px 3px 0px #387662;
+      @media @mobile {
+        width: 90%;
+        align-self: center;
+      }
+    }
+
+    .contentbody_child1 {
+      background: repeating-linear-gradient(
+        45deg,
+        #E27D60,
+        #E27D60 10px,
+        #E8A87C 10px,
+        #E8A87C 20px,
+        );
+    }
+
+    .contentbody_child2 {
+      background: repeating-linear-gradient(
+        90deg,
+        #E27D60,
+        #E27D60 10px,
+        #E8A87C 10px,
+        #E8A87C 20px,
+        );
+    }
+
+    .contentbody_child3 {
+      background: repeating-linear-gradient(
+        -45deg,
+        #E27D60,
+        #E27D60 10px,
+        #E8A87C 10px,
+        #E8A87C 20px,
+        );
+    }
+
+    .contentbody_child4 {
+      background: repeating-linear-gradient(
+        0deg,
+        #E27D60,
+        #E27D60 10px,
+        #E8A87C 10px,
+        #E8A87C 20px,
+        );
+     }
+
+    .about_profile_1, .about_profile_2,
+    .about_profile_3, .about_profile_4, .about_profile_5 {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      width: 35%;
+      border: 1px solid #387662;
+      margin: 1rem 1% 0rem 1%;
+      height: 50vh;
+      background: white;
+      border-radius: 1rem;
+      background: #71bca4;
+      -moz-box-shadow: 3px 3px 0px #387662;
+      -webkit-box-shadow: 3px 3px 0px #387662;
+      box-shadow: 3px 3px 0px #387662;
+      text-align: center;
+      @media @tablet-1000 {
+        width: 45%;
+      }
+      @media @mobile {
+        width: 90%;
+        margin: 1rem 5% 0rem 5%;
+        height: 25vh;
+        flex-direction: row;
+      }
+      img {
+        width: 65%;
+        border-radius: 50%;
+        -moz-box-shadow: 3px -3px 0px #387662;
+        -webkit-box-shadow: 3px -3px 0px #387662;
+        box-shadow: 3px -3px 0px #387662;
+        margin: 1rem 0rem 0rem 0rem;
+        height: 75%;
+        @media @mobile {
+          width: 50%;
+          height: 85%;
+          margin: 0.5rem 0rem 0.5rem 0.5rem;
+        }
+      }
+      h1 {
+        margin: 1rem 0rem 1rem 0rem;
+        font-size: 3rem;
+        color: white;
+        text-shadow: 2px 2px 4px #000000;
+        span {
+          color: #e27d60;
+        }
+      }
+
+      .flex {
+        display: flex;
+        flex-flow: wrap;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+}
