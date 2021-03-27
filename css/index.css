@@ -503,13 +503,8 @@ html {
     width: 100%;
   }
 }
-.container header .heading .top-btn button:hover {
-  animation-name: grow;
-  animation-duration: 3s;
-}
 @media (max-width: 500px) {
   .container header .heading .top-btn button:hover {
-    animation-name: none;
     color: #C38D9D;
     background-color: white;
     border: 2px solid #C38D9D;
